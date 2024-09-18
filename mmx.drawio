@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.14">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="752" dy="2500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="20000" pageHeight="2000" math="0" shadow="0">
+    <mxGraphModel dx="1343" dy="2893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="20000" pageHeight="2000" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -199,7 +199,7 @@
           </mxCell>
         </UserObject>
         <UserObject label="def compute_df(&quot;RESPONSE_CURVE_YEARS&quot;)" link="uplift_computation.compute_df(&#xa;                self.config.get(&quot;RESPONSE_CURVE_YEARS&quot;)" id="bgpGDWmcntnncIZ7-7qG-18">
-          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxCell style="text;whiteSpace=wrap;fontColor=#FF8000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
             <mxGeometry x="1270" y="840" width="340" height="50" as="geometry" />
           </mxCell>
         </UserObject>
