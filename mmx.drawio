@@ -1,9 +1,12 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.14">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2089" dy="3389" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="20000" pageHeight="2000" math="0" shadow="0">
+    <mxGraphModel dx="989" dy="2658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="20000" pageHeight="2000" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-19" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1210" y="820" width="760" height="630" as="geometry" />
+        </mxCell>
         <mxCell id="bgpGDWmcntnncIZ7-7qG-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1110" y="81" width="560" height="590" as="geometry" />
         </mxCell>
@@ -158,14 +161,14 @@
           <mxGeometry x="1430" y="591" width="150" height="60" as="geometry" />
         </mxCell>
         <UserObject label="" link="save_file(&quot;output/features_df.csv&quot;&#xa;save_file(&quot;output/normalized_features_df.csv&quot;&#xa;save_file(&quot;output/region_index_df.csv&quot;" id="bgpGDWmcntnncIZ7-7qG-10">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fa4uJrr_QhnZvR9-6Muc-62" target="bgpGDWmcntnncIZ7-7qG-6">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fa4uJrr_QhnZvR9-6Muc-62" target="bgpGDWmcntnncIZ7-7qG-6">
             <mxGeometry x="-0.0007" relative="1" as="geometry">
               <mxPoint x="1000" y="558" as="sourcePoint" />
               <mxPoint x="1277.0588235294117" y="640.9999999999998" as="targetPoint" />
               <Array as="points">
                 <mxPoint x="990" y="524" />
-                <mxPoint x="990" y="558" />
-                <mxPoint x="1242" y="558" />
+                <mxPoint x="990" y="30" />
+                <mxPoint x="1260" y="30" />
               </Array>
               <mxPoint as="offset" />
             </mxGeometry>
@@ -176,6 +179,34 @@
         </mxCell>
         <mxCell id="bgpGDWmcntnncIZ7-7qG-15" value="&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font color=&quot;#ff66ff&quot;&gt;uplift_computation&lt;/font&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="547.5" y="504" width="130" height="40" as="geometry" />
+        </mxCell>
+        <UserObject label="" link="save_file(&quot;output/features_df.csv&quot;&#xa;save_file(&quot;output/normalized_features_df.csv&quot;&#xa;save_file(&quot;output/region_index_df.csv&quot;" id="bgpGDWmcntnncIZ7-7qG-17">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="bgpGDWmcntnncIZ7-7qG-18">
+            <mxGeometry x="-0.0007" relative="1" as="geometry">
+              <mxPoint x="708" y="569" as="sourcePoint" />
+              <mxPoint x="1340" y="880" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="708" y="579" />
+                <mxPoint x="872" y="579" />
+                <mxPoint x="872" y="760" />
+                <mxPoint x="1440" y="760" />
+              </Array>
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="def compute_df(&quot;RESPONSE_CURVE_YEARS&quot;)" link="uplift_computation.compute_df(&#xa;                self.config.get(&quot;RESPONSE_CURVE_YEARS&quot;)" id="bgpGDWmcntnncIZ7-7qG-18">
+          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+            <mxGeometry x="1270" y="840" width="340" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="src/response_curve/response_curve_generator.py" link="src/response_curve/response_curve_generator.py" id="bgpGDWmcntnncIZ7-7qG-20">
+          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+            <mxGeometry x="1300" y="790" width="300" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-21" value="Computes all necessary DF for uplifts and contribution computation.&#xa;DFs:&#xa;1) Sales contribution:   contains for each year and touchpoint the delta&#xa;to null volumes for uplift 0 and 1, with contribution method for uplifted feature&#xa;   calculation&#xa;&#xa; 2) Sales distribution df: contains for each month, each uplift value, and each touchpoint, the delta to null volumes&#xa;&#xa;3)  Volumes uplifts uplift: contains for each year, each uplift value, and each touchpoint, the delta to null volumes" style="text;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1360" y="879" width="580" height="241" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
