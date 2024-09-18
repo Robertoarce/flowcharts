@@ -1,9 +1,12 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.14">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="752" dy="2500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="20000" pageHeight="2000" math="0" shadow="0">
+    <mxGraphModel dx="1567" dy="3042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="20000" pageHeight="2000" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-33" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2870" y="790" width="730" height="670" as="geometry" />
+        </mxCell>
         <mxCell id="bgpGDWmcntnncIZ7-7qG-19" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1210" y="820" width="760" height="630" as="geometry" />
         </mxCell>
@@ -231,14 +234,14 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <mxCell id="bgpGDWmcntnncIZ7-7qG-26" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2110" y="790" width="580" height="220" as="geometry" />
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-26" value="&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;value_uplift_df = pd.DataFrame(columns=[...])&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; value_distribution = pd.DataFrame(columns=[...])&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; samples_dict = self.compute_samples_for_uplifts(uplifts, year, is_contrib=is_contrib)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; for contrib, tp in self.contribs_names.items():&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; value_uplift_df = pd.concat(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; value_uplift_df,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.compute_delta_to_null_values(samples_dict[contrib], tp, year, is_contrib),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ],&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; )&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if not is_contrib:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; for uplift, samples in samples_dict[contrib].items():&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; value_distribution = pd.concat(...)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return value_uplift_df, value_distribution&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2110" y="790" width="650" height="550" as="geometry" />
         </mxCell>
         <UserObject label="" link="save_file(&quot;output/features_df.csv&quot;&#xa;save_file(&quot;output/normalized_features_df.csv&quot;&#xa;save_file(&quot;output/region_index_df.csv&quot;" id="bgpGDWmcntnncIZ7-7qG-27">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.384;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="bgpGDWmcntnncIZ7-7qG-26">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
             <mxGeometry x="-0.0007" relative="1" as="geometry">
               <mxPoint x="1540" y="1200.93" as="sourcePoint" />
-              <mxPoint x="2252" y="709.9300000000001" as="targetPoint" />
+              <mxPoint x="2330" y="783" as="targetPoint" />
               <Array as="points">
                 <mxPoint x="1540" y="1190" />
                 <mxPoint x="2000" y="1190" />
@@ -250,6 +253,27 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-28" value="def compute_uplift_df(" style="text;whiteSpace=wrap;fontSize=14;fontColor=#FF8000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2170" y="800" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-30" value="&lt;div style=&quot;forced-color-adjust: none; padding-left: 10px;&quot;&gt;Performs the computation of delta to null values for all uplifts in 2 steps:&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 1. Compute the samples for all the values&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 2. Compute delta to null values&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 3. Aggregate the results and format them in a dataframe&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; padding-left: 10px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; padding-left: 10px;&quot;&gt;:param year: Year on which to compute the uplifts&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&amp;nbsp; &amp;nbsp; :return: Two dataframes containing :&lt;/div&gt;&lt;blockquote style=&quot;forced-color-adjust: none; margin: 0px 0px 0px 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;a) the delta to null values for all uplifts,&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;b) aggregated per year or per year week&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2160" y="850" width="420" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-31" value="&quot;&quot;&quot;&#xa;        Aggregates the N samples output from STAN into aggregated statistics :&#xa;&#xa;            mean, percentile 10 and 90, aggregated per year week and touchpoint&#xa;&#xa;        parameters needed:&#xa;&#xa;            :param samples: array of samples for a given touchpoint and a given uplift.&#xa;            :param uplift: uplift value&#xa;            :param features_df: uplifted features df&#xa;            :param tp: touchpoint of interest&#xa;            :param year: year considered&#xa;        &#xa;:return: Dataframe containing the delta to null volumes stats for each week&#xa;        &quot;&quot;&quot;" style="text;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2960" y="830" width="520" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-32" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2440" y="1110" as="sourcePoint" />
+            <mxPoint x="3150" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2440" y="1100" />
+              <mxPoint x="2830" y="1100" />
+              <mxPoint x="2830" y="730" />
+              <mxPoint x="3150" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
