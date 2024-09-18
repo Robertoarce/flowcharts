@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.14">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1567" dy="3042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="20000" pageHeight="2000" math="0" shadow="0">
+    <mxGraphModel dx="1446" dy="2962" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="20000" pageHeight="2000" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -260,7 +260,7 @@
           <mxGeometry x="2160" y="850" width="420" height="200" as="geometry" />
         </mxCell>
         <mxCell id="bgpGDWmcntnncIZ7-7qG-31" value="&quot;&quot;&quot;&#xa;        Aggregates the N samples output from STAN into aggregated statistics :&#xa;&#xa;            mean, percentile 10 and 90, aggregated per year week and touchpoint&#xa;&#xa;        parameters needed:&#xa;&#xa;            :param samples: array of samples for a given touchpoint and a given uplift.&#xa;            :param uplift: uplift value&#xa;            :param features_df: uplifted features df&#xa;            :param tp: touchpoint of interest&#xa;            :param year: year considered&#xa;        &#xa;:return: Dataframe containing the delta to null volumes stats for each week&#xa;        &quot;&quot;&quot;" style="text;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2960" y="830" width="520" height="230" as="geometry" />
+          <mxGeometry x="4100" y="875" width="520" height="230" as="geometry" />
         </mxCell>
         <mxCell id="bgpGDWmcntnncIZ7-7qG-32" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -273,6 +273,103 @@
               <mxPoint x="3150" y="730" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-34" value="compute_distribution_values" style="text;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4120" y="830" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-35" value="&lt;span style=&quot;font-family: __styreneB_5d855b, __styreneB_Fallback_5d855b, ui-sans-serif, system-ui, -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.4px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font color=&quot;#ff8000&quot;&gt;def compute_samples_for_uplifts(&lt;/font&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2960" y="820" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-39" target="bgpGDWmcntnncIZ7-7qG-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-39" value="initialize : final samples&amp;nbsp; AND final_features&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="879" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-40" target="bgpGDWmcntnncIZ7-7qG-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-40" value="define&amp;nbsp; parellelized function for computing uplift samples&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="980" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-42" target="bgpGDWmcntnncIZ7-7qG-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-42" value="set up multi processing" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="1060" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-44" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="1150" width="270" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-46" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Parallelized Process&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="1130" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3150" y="1160" as="sourcePoint" />
+            <mxPoint x="3165" y="1192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-42" target="bgpGDWmcntnncIZ7-7qG-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3165" y="1120" as="sourcePoint" />
+            <mxPoint x="3165" y="1192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.407;exitY=0.269;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-44" target="bgpGDWmcntnncIZ7-7qG-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3090" y="1220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-48" target="bgpGDWmcntnncIZ7-7qG-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-48" value="for each&amp;nbsp;&lt;div&gt;uplift&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3125" y="1160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-50" target="bgpGDWmcntnncIZ7-7qG-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-50" value="compute uplifted features" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="1240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-52" target="bgpGDWmcntnncIZ7-7qG-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-52" value="create uplift datadict" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="1280" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-54" target="bgpGDWmcntnncIZ7-7qG-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-54" value="Generate quantities (stan model)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="1320" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-56" target="bgpGDWmcntnncIZ7-7qG-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-56" value="process and denormalize Samples" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3030" y="1360" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-58" target="bgpGDWmcntnncIZ7-7qG-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-58" value="store results&lt;div&gt;SAMPLES_DICT&lt;/div&gt;&lt;div&gt;and&lt;/div&gt;&lt;div&gt;FEATURES_DICT&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3190" y="1290" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="bgpGDWmcntnncIZ7-7qG-62" target="bgpGDWmcntnncIZ7-7qG-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-62" value="merge results&amp;nbsp;&lt;div&gt;into a dict&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3360" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-64" value="return dict" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3360" y="1310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bgpGDWmcntnncIZ7-7qG-66" value="&lt;code class=&quot;bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.3rem] px-1 py-px text-[0.9rem]&quot;&gt;generate_quantities&lt;/code&gt; allows you to compute additional quantities of interest based on the fitted model parameters and data, without affecting the posterior distribution&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;is like predict but for probabilistic dist not point estimate&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3390" y="894" width="180" height="186" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
